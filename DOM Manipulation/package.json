@@ -1,0 +1,15 @@
+{
+  "name": "bluemix-hello-node",
+  "version": "0.0.0",
+  "dependencies": {
+    "cf-deployment-tracker-client": "*",
+    "commander": "^2.6.0",
+    "express": "^4.14.1",
+    "http-post": "^0.1.1",
+    "http-proxy": "^1.8.1"
+  },
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/RenanC4/PigGame.git"
+  }
+}

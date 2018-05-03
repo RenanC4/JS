@@ -1,0 +1,5 @@
+---
+applications:
+- name:   PigGame
+  random-route: true
+  memory:  128M
