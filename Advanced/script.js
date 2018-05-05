@@ -55,7 +55,7 @@ console.log(obj.city);
 
 // Passing functions as arguments
 
-var years = [1990, 1995, 1937, 2005, 1998];
+/* var years = [1990, 1995, 1937, 2005, 1998];
 
 function arrayCalc(arr, fn){
     var arrRes = [];
@@ -96,3 +96,49 @@ console.log(fullAge);
 
 var maxHeart = arrayCalc(ages, maxHeartRate);
 console.log(maxHeart);
+
+*/
+
+// Functions returning Functions
+
+/* function interview(job){
+        if (job === 'Web developer'){
+            return function(name){
+            console.log(name + ' você manja dos paranaue de Node?');
+            }
+        } else if (job === 'Designer'){
+            return function(name){
+            console.log('Voce manja dos paranauê de UX ' + name + '?');
+            }
+        } else {
+            return function(name){ 
+                console.log(name + ' Me conta mais sobre o seu trabalho..');
+            }
+        }
+    }
+
+
+var webDev = interview('Web developer');
+var Designer = interview('Designer');
+var hueBR = interview ('HueBRBR');
+
+webDev('Renan');//dessa forma eh necessario criar as variaveis acima
+Designer('Maria');
+hueBR('John');
+
+interview('Web developer')('Blanka'); //Usando dessa forma nao eh necessario criar as variaveis; 'Leitura Left right'
+*/
+
+//IIFE -Immediately invoked function expressions
+
+// function game() {
+//     var score = Math.random() *10;
+//     console.log(score>=5);
+// }
+// game();
+hue = 5;
+(function(luckDay) {
+    var score = Math.random() *10;
+    console.log(score>=(5  - luckDay));
+    console.log(score);
+})(hue);
