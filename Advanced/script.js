@@ -211,7 +211,6 @@ renanFormal('Morning');
 
 var carolInformal = renan.presentation.bind(carol, 'Informal');
 carolInformal('Afternoon');
-*/
 
 var years = [1990, 1995, 1937, 2005, 1998];
 
@@ -238,4 +237,4 @@ function isFullAge(variableAge , el){
 var ages = arrayCalc(years, calculateAge);
 var isFullAgeBrasil = arrayCalc(ages, isFullAge.bind(this, 18));
 console.log(ages);
-console.log(isFullAgeBrasil);
+console.log(isFullAgeBrasil); */
